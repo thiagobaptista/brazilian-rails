@@ -168,5 +168,25 @@ class String
   def masculino!
     # TODO implementar
   end
+  
+  # Retorna a palavra feminina equivalente à essa palavra, ou a própria palavra caso o seu feminino não exista.
+  #
+  # Exemplo:
+  #  'ladrão'.feminino ==> 'ladra'
+  #  'ladrao'.feminino ==> 'ladra' # a falta do til em 'ladrão' não altera o resultado
+  #  'presidente'.feminino ==> 'presidente' # afinal, a palavra 'presidente' NÃO POSSUI FEMININO
+  def feminino
+    # TODO implementar
+  end
+  
+  # Transforma a palavra em seu equivalente feminino na própria instância.
+  #
+  # Exemplo:
+  #  texto = 'desenvolvedor'
+  #  texto.feminino!
+  #  texto ==> 'desenvolvedora'
+  def feminino!
+    # TODO implementar
+  end
 end
 
