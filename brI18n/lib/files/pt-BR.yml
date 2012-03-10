@@ -108,7 +108,7 @@ pt-BR:
         header:
           one: "Não pôde ser salvo: 1 erro"
           other: "Não pôde ser salvo: {{count}} erros."
-        body: "Por favor, cheque os seguintes campos:"
+        body: "Por favor, verifique os seguintes campos:"
       messages:
         inclusion: "não está incluso na lista"
         exclusion: "não está disponível"
