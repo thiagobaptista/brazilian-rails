@@ -148,7 +148,25 @@ class String
   def titleize!
     self.gsub!(/^.*$/, String.titleize(self)) if self
   end
-
-
+  
+  # Retorna a palavra masculina equivalente à essa palavra, ou a própria palavra caso o seu masculino não exista.
+  #
+  # Exemplo:
+  #  'ladra'.masculino ==> 'ladrão'
+  #  'boemia'.masculino ==> 'boêmio' # a falta do acento circunflexo em 'boêmia' não altera o resultado
+  #  'presidenta'.masculino ==> 'presidenta' # afinal, não existe a palavra 'presidenta'
+  def masculino
+    # TODO implementar
+  end
+  
+  # Transforma a palavra em seu equivalente masculino na própria instância.
+  #
+  # Exemplo:
+  #  texto = 'programadora'
+  #  texto.masculino!
+  #  texto ==> 'programador'
+  def masculino!
+    # TODO implementar
+  end
 end
 
