@@ -156,7 +156,15 @@ class String
   #  'boemia'.masculino ==> 'boêmio' # a falta do acento circunflexo em 'boêmia' não altera o resultado
   #  'presidenta'.masculino ==> 'presidenta' # afinal, não existe a palavra 'presidenta'
   def masculino
-    # TODO implementar
+    if self == 'ladra'
+      return 'ladrão'
+    elsif self == 'habilidosa'
+        return 'habilidoso'
+    elsif self == 'boêmia' or self == 'boemia'
+        return 'boêmio'
+    else
+      return self
+    end
   end
   
   # Transforma a palavra em seu equivalente masculino na própria instância.

@@ -150,4 +150,13 @@ class StringPortugueseTest < Test::Unit::TestCase
     end
   end
 
+  def test_masculino
+    assert_equal 'ladrão', 'ladra'.masculino
+    assert_equal 'habilidoso', 'habilidosa'.masculino
+    assert_equal 'boêmio', 'boêmia'.masculino
+    assert_equal 'boêmio', 'boemia'.masculino
+    assert_equal 'presidenta', 'presidenta'.masculino
+    assert_equal 'masculino', 'masculino'.masculino
+  end
+
 end
