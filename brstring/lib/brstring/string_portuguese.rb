@@ -6,6 +6,13 @@ class String
   MINUSCULAS = "abcdefghijklmnopqrstuvwxyz#{MINUSCULAS_COM_ACENTO}"
   MAIUSCULAS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#{MAIUSCULAS_COM_ACENTO}"
 
+  MASCULINOS = {
+    'ladra' => 'ladrão', 
+    'habilidosa' => 'habilidoso', 
+    'boêmia' => 'boêmio', 
+    'boemia' => 'boêmio'
+  }
+
   # Normaliza nomes proprios
   #
   # Exemplo:
@@ -156,12 +163,8 @@ class String
   #  'boemia'.masculino ==> 'boêmio' # a falta do acento circunflexo em 'boêmia' não altera o resultado
   #  'presidenta'.masculino ==> 'presidenta' # afinal, não existe a palavra 'presidenta'
   def masculino
-    if self == 'ladra'
-      return 'ladrão'
-    elsif self == 'habilidosa'
-        return 'habilidoso'
-    elsif self == 'boêmia' or self == 'boemia'
-        return 'boêmio'
+    if MASCULINOS.has_key? self
+      return MASCULINOS[self]
     else
       return self
     end
