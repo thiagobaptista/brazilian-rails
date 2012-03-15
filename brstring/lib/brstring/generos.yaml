@@ -1,0 +1,30 @@
+# encoding: utf-8
+
+generos:
+  neutros:
+    - criança
+    - \w+nte
+    - fã
+    - \w+ista
+    - atleta
+    - modelo
+    - \w+em
+
+  irregulares:
+    - ["homem", "mulher"]
+    - ["padre", "madre"]
+    - ["boi", "vaca"]
+    - ["pai", "mãe"]
+    - ["ator", "atriz"]
+    - ["imperador", "imperatriz"]
+    - ["rei", "rainha"]
+
+  feminino:
+    - ['(\w+r)', '\1a']
+    - ['(\w+)o', '\1a']
+    - ['(\w+ã)o', '\1']
+
+  masculino:
+    - ['(\w+r)a', '\1']
+    - ['(\w+)a', \1o]
+    - ['(\w+ã)', '\1o']
